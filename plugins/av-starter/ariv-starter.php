@@ -17,6 +17,7 @@ require_once ARIV_STARTER_PATH . 'includes/assets.php';
 require_once ARIV_STARTER_PATH . 'includes/admin.php';
 require_once ARIV_STARTER_PATH . 'includes/shortcodes.php';
 require_once ARIV_STARTER_PATH . 'includes/helpers.php';
+require_once ARIV_STARTER_PATH . 'includes/posts/destinations.php';
 
 // Lifecycle
 register_activation_hook(__FILE__, function () { flush_rewrite_rules(); });
