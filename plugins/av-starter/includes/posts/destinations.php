@@ -5,6 +5,7 @@ function av_register_destinations_cpt() {
     $labels = [
         'name' => 'Destinations',
         'singular_name' => 'Destination',
+	    'add_new_item' => 'Add New Destination',
     ];
 
     $args = [
@@ -12,7 +13,8 @@ function av_register_destinations_cpt() {
         'public' => true,
         'has_archive' => true,
         'menu_icon' => 'dashicons-location-alt',
-        'show_in_rest' => true, // enables Gutenberg + API
+        'show_in_rest' => true, // enables Gutenberg + API,
+	    'show_in_menu' => 'ariv-starter',
         'supports' => ['title','thumbnail','excerpt'],
         'rewrite' => ['slug' => 'destinations'],
     ];
