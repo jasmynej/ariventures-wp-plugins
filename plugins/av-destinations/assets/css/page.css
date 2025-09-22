@@ -1,6 +1,11 @@
-.container {
+.page-container {
     width: 80vw;
     height: 100vh;
+    font-family: "General Sans", sans-serif;
+}
+
+.page-container h2 {
+    font-family: 'Boska', serif;
 }
 
 .hero {
@@ -19,10 +24,49 @@
     padding: 2rem;
     width: 100%;
     height: 400px;
+    display: flex;
+    justify-content: center;
 }
 
 .title {
     font-size: 4rem;
     font-family: 'Boska', serif;
     font-weight: 500;
+}
+
+#view-trip {
+    background-color: #f7c6c6;
+    border: none;
+    color: #42423F;
+}
+
+#create-trip {
+    border: #F7F1ED 1px solid;
+    color: #F7F1ED;
+}
+#create-trip:hover{
+    background-color: #F7F1ED;
+    color: #42423F;
+}
+
+#view-trip:hover {
+    background-color: #F29797;
+}
+
+.info {
+    display: flex;
+    width: 100%;
+    padding: 2rem;
+}
+
+.quick-facts {
+    width: 400px;
+    height: 500px;
+    background-color: #F5E2D7;
+    border-radius: 1em;
+    padding: 20px;
+}
+
+.why-visit {
+    width: 80%;
 }
