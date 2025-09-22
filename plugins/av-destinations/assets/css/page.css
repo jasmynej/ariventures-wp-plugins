@@ -1,0 +1,28 @@
+.container {
+    width: 80vw;
+    height: 100vh;
+}
+
+.hero {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 400px; /* adjust */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+}
+.hero .overlay {
+    background: rgba(0,0,0,.4); /* optional dark overlay */
+    padding: 2rem;
+    width: 100%;
+    height: 400px;
+}
+
+.title {
+    font-size: 4rem;
+    font-family: 'Boska', serif;
+    font-weight: 500;
+}
