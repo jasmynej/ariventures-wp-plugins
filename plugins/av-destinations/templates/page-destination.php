@@ -6,7 +6,6 @@
     <div class="hero" style="background-image: url('<?= esc_url($d['image_url']); ?>');">
         <div class="overlay">
             <h1 class="title">Discover <?= esc_html($d['title'])?></h1>
-            <h2>with ariventures</h2>
             <div>
                 <button id="view-trip">View All Trips</button>
                 <button id="create-trip">Create a Custom Itinerary</button>
@@ -20,6 +19,7 @@
         </div>
         <div class="quick-facts">
             <h3>Quick Facts</h3>
+            <p><?= $d['quick_facts']['capital']?></p>
         </div>
     </div>
 </div>

@@ -54,7 +54,8 @@ add_shortcode('avd_destination', function($atts){
 		'best_months' => $acf['best_months'] ?? [],
 		'continent'   => wp_get_post_terms($id, 'continent', ['fields' => 'names']),
 		'themes'      => wp_get_post_terms($id, 'travel_theme', ['fields' => 'names']),
-		'hotels'      => av_get_hotels_for_destination($id)
+		'hotels'      => av_get_hotels_for_destination($id),
+		'quick_facts' => $acf['quick_facts'] ?? [],
 	];
 	return av_render_template('page-destination.php', ['d' => $data]);
 

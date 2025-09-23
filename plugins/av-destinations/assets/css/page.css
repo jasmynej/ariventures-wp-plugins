@@ -6,6 +6,9 @@
 
 .page-container h2 {
     font-family: 'Boska', serif;
+    font-size: 3em;
+    font-weight: 700;
+    color: #745D44;
 }
 
 .hero {
@@ -57,16 +60,23 @@
     display: flex;
     width: 100%;
     padding: 2rem;
+    color: #42423F;
 }
 
 .quick-facts {
-    width: 400px;
+    width: 20vw;
     height: 500px;
     background-color: #F5E2D7;
     border-radius: 1em;
     padding: 20px;
 }
 
+.quick-facts h3 {
+    font-family: 'Boska', serif;
+    font-weight: 600;
+}
+
 .why-visit {
     width: 80%;
+    padding: 1rem;
 }
