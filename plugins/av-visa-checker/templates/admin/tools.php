@@ -39,4 +39,7 @@
 			</form>
 		</div>
 	</div>
+	<?php if (!empty($generate_result)): ?>
+		<div class="notice notice-info av-inline"><p><?php echo esc_html($generate_result['message']); ?></p></div>
+	<?php endif; ?>
 </div>
