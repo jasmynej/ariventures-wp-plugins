@@ -1,0 +1,58 @@
+/* assets/css/global.css */
+
+/* Fonts — fine as-is, then APPLY them to your area */
+@font-face {
+    font-family: 'Boska';
+    src: url('../fonts/Boska-Variable.ttf') format('truetype-variations');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'General Sans';
+    src: url('../fonts/GeneralSans-Variable.ttf') format('truetype-variations');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Apply fonts ONLY inside your admin pages */
+.av-wrap {
+    font-family: 'General Sans', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+    padding: 2em;
+}
+
+/* Headings: increase specificity vs admin defaults */
+.av-wrap h1, .av-wrap h2, .av-wrap h3 {
+    font-family: 'Boska', serif;
+    letter-spacing: .2px;
+}
+.av-wrap h1 { font-size: 28px; line-height: 1.2; }
+.av-wrap h2 { font-size: 18px; }
+
+/* Buttons: match WP selectors with a scoped prefix */
+.av-wrap .wp-core-ui .button {
+    border-radius: 8px;
+    padding: 8px 12px;
+    border: 1px solid #e5e7eb;
+    background: #fff;
+}
+.av-wrap .wp-core-ui .button:hover { filter: brightness(.98); }
+.av-wrap .wp-core-ui .button.button-primary {
+    background: #F8C9C9;
+    border-color: #F8C9C9;
+    color: #fff;
+}
+/* Focus/active states so WP doesn't override your primary color */
+.av-wrap .wp-core-ui .button.button-primary:focus,
+.av-wrap .wp-core-ui .button.button-primary:active {
+    box-shadow: 0 0 0 2px rgba(37,99,235,.25);
+}
+
+/* Cards / tables (optional polish) */
+.av-wrap .av-card { background:#fff; border:1px solid #e5e7eb; border-radius:12px; }
+.av-wrap .av-card__header { padding:14px 16px; border-bottom:1px solid #e5e7eb; }
+.av-wrap .av-card__body { padding:16px; }
+
+/* Avoid global .wrap overrides—scope it */
+.av-wrap { background-color: #fff; }
