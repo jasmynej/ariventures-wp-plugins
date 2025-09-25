@@ -38,7 +38,7 @@ class ArivVisa_Admin {
 		$generate_result = null;
 
 		if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-			if (isset($_POST['countries_csv'])) {
+			if (isset($_FILES['countries_csv'])) {
 				check_admin_referer('arivvisa_import_countries','arivvisa_nonce');
 				require_once AV_VISA_CHECKER_PATH . 'includes/importer.php';
 				$import_result = ArivVisa_Importer::import_countries_from_upload($_FILES['countries_csv']);
